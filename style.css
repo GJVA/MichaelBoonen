@@ -1,0 +1,1334 @@
+/***************************************** HOME *******************************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  font-family: futura;
+  padding:0;
+  height: 100%;
+  }
+.banner1 {
+  background-color: black;
+  padding-top: 20px;
+}
+/* ----------------- Navigation Menu ---------------------------------------------------------------- */ 
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  height:50px; 
+}
+
+.topnav a:hover {
+  background-color: #404040;
+  color: white;
+}
+
+.active {
+  background-color: #404040;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+  height:60px; 
+  padding: 16px;
+}
+
+@media screen and (max-width: 1100px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+      }
+}
+
+
+.fa:hover {
+    opacity: 0.7;
+
+}
+/* Set a specific color for each brand */
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+#flag-button-home {
+  background-color: transparent;
+  border:0;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+#flag-button-home {
+  float: right;
+  padding: 11px 5px 5px 5px;
+}
+#flag-button-home img {
+  width:40px;
+  height:30px;
+
+
+}
+
+/* -------- Buttons & Social media --------- */
+
+
+#button_1 {
+    background-color: black;
+    color: white;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 5px 5px 5px;
+    border: 2px solid black;
+}
+x
+#button_1:hover {
+    background-color: transparent;
+    color: black;
+
+}
+
+#button_2 {
+  flex-direction: row;
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin-left:10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 2px solid white;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer; 
+  margin: 0px 5px 5px 5px;
+}
+#button_2:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.social_home_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+}
+#social1 {
+   padding: 9px 9px;
+   float:right;
+   font-size: 20px;
+   width: 40px;
+   height:40px; 
+   border-radius: 30px;
+   margin: 15px 2px;
+   position: relative;
+   margin-right: 5px; 
+}
+
+#social1:hover {
+  background-color: #606060;
+  text-decoration: none;
+  color:white;
+}
+
+#social1 a {
+  text-decoration: none;
+}
+/* ------- Footer (ALL PAGES) ------- */
+
+.footer {
+
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 5px; 
+  background-color: #151515;
+  padding-top: 30px;
+  width:100%;
+  height:160px;
+  text-align: center;
+}
+.adres {
+  flex: 30%;
+  color:white;
+  padding-bottom: 20px;
+}
+.adres img {
+  width: 39px;
+  height:35px;
+  border-radius:100%; 
+}
+.email {
+  flex: 30%;
+  color:white;
+  padding-bottom: 20px;
+  margin-top: -10px;
+}
+.email img {
+  width: 39px;
+  height:35px;
+  border-radius:100%; 
+}
+.telefoon {
+  flex: 30%;
+  color:white;
+  padding-bottom: 20px;
+}
+.telefoon img {
+  width: 39px;
+  height:35px;
+  border-radius:100%;
+}
+
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #151515;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+#footer_home {
+ height: 150px; 
+}
+
+
+/* ************************************ PROJECTS ********************************** */
+
+.hero-image_projects_page {
+  width: 100%;
+  border:none;
+
+  overflow: hidden;
+}
+#projects_page_hero {
+  background-image: url("images/hero5.jpg");
+  height: 370px;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+  background-position: 30% 95%;
+}
+#projects_page_title_hero {
+
+color: white;
+text-align: center;
+font-size: 50px;
+padding:20px;
+position: absolute;
+bottom: 150px;
+background: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+color: #f1f1f1;
+width:100%;
+}
+
+
+/* Repeater field*/
+
+.projectspage-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top:30px;
+  padding-bottom:30px;
+
+}
+
+/* ------- SUNDAY DRIVE (versie) ------ */
+
+.sd-container {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#title_sd_projects{
+  padding-bottom: 10px;
+}
+.sd-1 {
+  flex: 30%;
+}
+.sd-2 {
+  flex: 60%;
+  justify-content: center;
+  padding: 50px 50px 50px 50px;
+  color:black;
+  width: 100%;
+  height: 311px;
+  margin-top: 5px;
+  margin-left: 5px;
+
+}
+#fotosd {
+  margin-bottom: 30px;
+  margin-top: 20px;
+
+}
+.buttons_projects {
+  padding-top: 10px;
+}
+#button_3 {
+
+  background-color: transparent;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: 2px solid black;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer; 
+  margin: 0px 0px 0px 0px;
+
+}
+#button_3:hover {
+    background-color: black;
+    color: white;
+}
+
+#horizontal1 {
+ width: 1340px;
+ border-top: 1px solid black;
+ left: 50px;
+ right: 50px;
+}
+
+/*------- Kleinkunst (versie) --------*/
+.kk-container {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#title_kk_projects{
+  padding-bottom: 10px;
+}
+.kk-1 {
+  flex: 30%;
+}
+.kk-2 {
+  flex: 60%;
+  justify-content: center;
+  padding: 50px 50px 50px 50px;
+  color:black;
+  width: 100%;
+  height: 311px;
+  margin-top: 5px;
+  margin-left: 5px;
+
+}
+#fotokk {
+  margin-bottom: 30px;
+  margin-top: 20px;
+
+}
+
+@media (max-width: 1200px) {
+  .sd-container, .kk-container {
+      height:400px;
+}
+}
+@media (max-width: 1000px) {
+  .sd-container, .kk-container {
+      height:450px;
+}
+  .sd-2, .kk-2 {
+      margin-top: -40px;
+    }
+}
+@media (max-width: 850px) {
+    .projectspage-container {
+        flex: 100%;
+        max-width: 100%;
+        align-content: center;
+        text-align: center;
+    }
+    .projectspage-container img {
+      width: 420px;
+      height: 300px;
+    }
+      .sd-container, .kk-container {
+      height:550px;
+            margin-bottom: -80px;
+    }
+      .sd-2, .kk-2 {
+       margin-top: -40px;
+    }
+}
+@media (max-width: 600px) {
+    .projectspage-container {
+        flex: 100%;
+        max-width: 100%;
+        align-content: center;
+        text-align: center;
+    }
+    .projectspage-container img {
+      width: 370px;
+      height: 300px;
+    }
+    .sd-container, .kk-container {
+      height:600px;
+      margin:0px;
+    }
+    .sd-2, .kk-2 {
+       margin-top: -120px;
+       width: 400px;
+       margin-left: -80px;
+       margin-bottom: -150px;
+    } 
+    #paragraph_projects_page {
+      display: none;
+    }
+    .buttons_projects button {
+      width: 300px;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      align-content: center;
+    }
+}
+@media (max-width: 400px) {
+    .projectspage-container {
+        flex: 100%;
+        max-width: 100%;
+        align-content: center;
+        text-align: center;
+    }
+    .projectspage-container img {
+      display:none;
+      width: 370px;
+      height: 200px;
+    }
+    .sd-container, .kk-container {
+      height:270px
+
+    }
+    .sd-2, .kk-2 {
+       margin-top: -20px;
+       width: 400px;
+       margin-left: -80px;
+       margin-bottom: -70px;
+    } 
+    #paragraph_projects_page {
+      display: none;
+    }
+    .buttons_projects button {
+      width: 250px;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      align-content: center;
+    }
+    .kk-1, .sd-1 {
+      display: none;
+    }
+    #title_sd_projects {
+      font-size: 20px;
+    }
+    #title_kk_projects {
+      font-size: 20px;
+    }
+}
+
+@media (max-width: 350px) {
+    .projectspage-container {
+        flex: 100%;
+        max-width: 100%;
+        align-content: center;
+        text-align: center;
+    }
+    .projectspage-container img {
+      display:none;
+      width: 370px;
+      height: 200px;
+    }
+    .sd-container, .kk-container {
+      height:210px
+    }
+    .sd-2, .kk-2 {
+       margin-top: -60px;
+       width: 400px;
+       margin-left: -80px;
+       margin-bottom: -60px;
+    } 
+    #paragraph_projects_page {
+      display: none;
+    }
+    .buttons_projects button {
+      width: 200px;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      align-content: center;
+    }
+    .kk-1, .sd-1 {
+      display: none;
+    }
+    #title_sd_projects {
+      font-size: 15px;
+    }
+    #title_kk_projects {
+      font-size: 15px;
+    }
+}
+/************************************************* ABOUT ******************************************************/
+
+.hero-image_about_page {
+  width: 100%;
+  border:none;
+  overflow: hidden;
+
+}
+.hero-image_about_page img {
+
+}
+#about_page_hero {
+  background-image: url("images/mic_about_hero.jpg");
+  height: 370px;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+  background-position: 30% 45%;
+
+}
+#about_page_title_hero {
+
+color: white;
+text-align: center;
+font-size: 50px;
+padding:20px;
+position: absolute;
+bottom: 150px;
+background: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+color: #f1f1f1;
+width:100%;
+}
+
+/*------- Content ------*/
+
+.content_aboutcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  padding: 40px 0px 40px 0px;
+}
+
+.content_aboutcontainer img {
+  height: auto;
+  width: 100%;
+}
+
+.foto_aboutcontainer {
+  flex: 40.2%;
+}
+
+.tekst_aboutcontainer {
+  flex: 50%;
+  margin-right: 30px;
+  margin-left: 50px;
+
+}
+.buttons_about {
+  margin-top: 50px;
+}
+
+#title_aboutcontainer {
+
+  margin-top: 60px;
+}
+@media screen and (max-width: 800px) {
+    .content_aboutcontainer {
+        flex: 100%;
+        max-width: 100%;
+        align-content: center;
+        text-align: center;
+    }
+    .content_aboutcontainer img {
+      width: 400px;
+      height: 380px;
+    }
+}
+
+@media (max-width: 400px) {
+  .content_aboutcontainer img {
+    max-width: 300px;
+    max-height:300px;
+  }
+  #button_3 {
+    margin-bottom: 5px;
+  }
+}
+/************************** Sunday drive page ***************************************/
+
+/* ----- Header ----- */
+
+.hero-image_project {
+  width: 100%;
+  border:none;
+  overflow: hidden;
+}
+#project_hero {
+  background-image: url("images/sundaydrive_page/feest_sundaydrive1.jpg");
+  height: 370px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  position: relative; 
+}
+#project_title_hero {
+
+color: white;
+text-align: center;
+font-size: 50px;
+padding:20px;
+position: absolute;
+bottom: 150px;
+background: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+color: #f1f1f1;
+width:100%;
+}
+
+/* ------------------- Content ---------------------- */
+
+/* --------Container 1 ---------*/
+
+.page-project-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width:100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-right: 80px;
+  padding-left: 80px;
+
+}
+
+/*---------- who am i */
+
+.page-project-whoami {
+  flex: 40%;
+}
+#whoami-title-project{
+  margin-bottom: 20px;
+}
+
+.whoami-gegevens-project {
+  padding-top:30px;
+}
+.buttons-whoami {
+  padding-top:20px;
+}
+
+#social-project {
+  font-size: 20px;
+  width: 40px;
+  height:40px; 
+  border-radius: 30px;
+  margin: 5px 3px;
+  margin-right: 5px; 
+  text-decoration: none;
+  padding:9px 10px 20px 12px;
+  float:right;
+  background-color: #404040;
+  justify-content: center;
+  text-align: center;
+}
+
+#social-project:hover {
+  text-decoration: none;
+  background-color: #606060;
+  color:white;
+}
+/* ----------- Contactinfo */
+
+#slideshow {
+  position: relative;
+
+}
+
+#slideshow div {
+  position: absolute;
+}
+
+#slideshow img {
+  width: 560px;
+  height: 400px;
+  overflow:hidden;
+}
+
+.page-project-contactinfo {
+  flex:50%;
+  padding-left: 150px;
+  color:black;
+}
+
+
+
+/* ---------- Container 2 ----------*/
+
+.page-project-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 60px;
+  background-color:#383838;
+}
+
+
+/* ---------- video */
+
+.youtube-video-project1 {
+  flex:30%;
+  padding: 90px 10px;
+  border: 0px;
+}
+.youtube-video-project2 {
+  flex:30%;
+  padding: 90px 70px;
+  border: 0px;
+}
+
+
+/* ---------- shows */
+.shows-container-project {
+  background-color:#383838;  
+
+}
+.shows-project {
+  flex:100%;
+  margin-left: 60px;
+  margin-right:80px;
+  margin-bottom: 50px;
+}
+
+.title_shows {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.shows-project {
+  padding: 40px 40px 40px 40px;
+  text-align: center;
+  background-color:#181818;
+  color: white;
+
+}
+.column_shows {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%
+
+}
+.naam_sd {
+  flex:30%;
+}
+.plaats_sd {
+  flex:30%;
+}
+.datum_sd {
+  flex:30%;
+}
+
+
+#horizontal-show {
+ width: 940px;
+ border-top: 1px solid white;
+ padding-bottom: 10px;
+ padding-top:10px;
+ margin-left:140px;
+ margin-right: 40px;
+}
+
+/* ---- Container X ---- */
+
+.page-project-containerx {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-bottom: 5px;
+  height:520px;
+  background-color:#f1f1f1;
+  height:560px;
+  padding-top:20px;
+}
+
+#title_audio_project {
+  padding-left:20px;
+}
+.Band-picture-project-page {
+  flex:30%;
+
+}
+.Band-picture-project-page img {
+  width:530px;
+  height:500px;
+  padding:40px 40px 20px 80px;
+}
+.Audio-files {
+  flex:50%;
+  padding:80px 40px 20px 60px;
+}
+#audio_project {
+  padding: 25px;
+}
+#nummer-title-audio {
+  padding:5px;
+}
+.audio-column {
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+}
+.audio-row {
+  flex-direction: row;
+}
+
+/************************************************* A PROPOS ******************************************************/
+
+#project_hero1 {
+  background-image: url("images/apropos_page/apropos-hero.jpg");
+  height: 370px;
+  overflow: hidden;
+  background-position: top;
+  background-size: cover;
+  position: relative; 
+}
+
+/************************************************** RECORDING STUDIO ********************************************/
+
+
+/* ----- Header ----- */
+
+.hero-image_recording {
+  width: 100%;
+  border:none;
+  overflow: hidden;
+}
+#recording_hero {
+  background-image: url("images/recordingstudio_page/recording_page_foto.jpg");
+  height: 370px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  position: relative; 
+}
+#recording_title_hero {
+
+color: white;
+text-align: center;
+font-size: 50px;
+padding:20px;
+position: absolute;
+bottom: 150px;
+background: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+color: #f1f1f1;
+width:100%;
+}
+
+/*--------Container Z -------*/
+
+.page-project-containerZ {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width:100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
+/*---------- who am i */
+
+.page-recording-whoami {
+  flex: 40%;
+}
+#whoami-title-recording{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.whoami-gegevens-recording {
+  padding-top:30px;
+  padding-left:20px;
+  padding-right: 20px;
+}
+
+/* ------ Container y ------ */
+
+
+.page-project-containery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  padding-right: 5px;
+  padding-left: 5px;
+  background-color:#f1f1f1;
+  padding-top:20px;
+}
+
+.Band-picture-recording-page {
+  padding-left: 50px;
+  padding-top: 30px;
+  flex: 20%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Audio-files-1 {
+  padding:60px 40px 20px 120px;
+}
+#audio_project-1 {
+  padding: 25px;
+  flex: 50%;
+}
+#nummer-title-audio-1 {
+  padding:5px;
+}
+.audio-column-1 {
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+}
+.audio-row-1 {
+  flex-direction: row;
+}
+
+@media (max-width: 1380px) {
+.Band-picture-recording-page, .Audio-files-1 {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  max-width: 100%;
+}
+}
+
+@media (max-width: 1100px) {
+.slideshow, .Audio-files-1 {
+  flex-direction: column;
+  flex: 50%;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+.Audio-files-1 {
+  margin-top: 350px;
+}
+.Band-picture-recording-page{
+  margin-left: 50px;
+}
+}
+@media (max-width: 600px) {
+.slideshow, .Audio-files-1 {
+  flex-direction: column;
+  flex: 50%;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+.Audio-files-1 {
+  margin-top: -60px;
+  margin-left: -100px;
+}
+.Band-picture-recording-page{
+display: none;
+}
+}
+
+@media (max-width: 370px) {
+.slideshow, .Audio-files-1 {
+  flex-direction: column;
+  flex: 50%;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin:0px;
+  padding-right: 0px;
+
+}
+.audio-row-1 audio {
+  width: 100px;
+}
+.Audio-files-1 {
+  margin-top: -40px;
+  margin-left: -140px;
+  width: 20px;
+}
+.Band-picture-recording-page{
+display: none;
+}
+}
+/************************************** COURSES ******************************************/
+
+.hero-image_courses {
+  width: 100%;
+  border:none;
+  overflow: hidden;
+}
+#courses_hero {
+  background-image: url("images/lessen_page/lessen_hero3.jpg");
+  height: 370px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  position: relative; 
+}
+#courses_title_hero {
+
+color: white;
+text-align: center;
+font-size: 50px;
+padding:20px;
+position: absolute;
+bottom: 150px;
+background: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+color: #f1f1f1;
+width:100%;
+}
+
+
+/* ----------- Container 1 */
+/* -------- CTA ---------*/
+
+.contact_lessen_banner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-image: url("images/projecten_foto3.jpg");
+  background-size: cover;
+  color: white;
+}
+.content_banner {
+  flex:70%;
+  padding-left: 30px;
+}
+.button_banner {
+  flex:20%;
+  padding-top:30px;
+  padding-left: 90px;
+}
+#title_lessen_banner {
+  padding:20px 20px;
+  margin-bottom: 30px;
+}
+@media (max-width: 900px) { 
+ .button_banner {
+    padding-top: -10px;
+    padding-bottom: 20px;
+ }
+ #title_lessen_banner {
+  margin-bottom: 0px;
+}
+#muziek_page_details {
+  margin-bottom: -190px;
+  margin-left: -40px;
+
+}
+}
+@media (max-width: 400px) { 
+ .button_banner {
+    padding-top: -10px;
+    padding-bottom: 20px;
+ }
+ #title_lessen_banner {
+  margin-bottom: 0px;
+}
+#muziek_page_details {
+  margin-bottom: -190px;
+  margin-left: -80px;
+
+}
+}
+
+/***************************************************** PA RENTAL ************************************************/
+
+.hero-image_parental {
+  width: 100%;
+  border:none;
+  overflow: hidden;
+}
+#parental_hero {
+  background-image: url("images/parental_page/hero_parental_page.jpg");
+  height: 370px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  position: relative; 
+  background-position: 10% 65%;
+}
+#parental_title_hero {
+
+color: white;
+text-align: center;
+font-size: 50px;
+padding:20px;
+position: absolute;
+bottom: 150px;
+background: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+color: #f1f1f1;
+width:100%;
+}
+
+
+/* ----------- content Materiaal */
+
+#title_materiaal {
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background-image: url("images/projecten_foto3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+}
+
+.materiaal-parental-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-bottom: 80px;
+  padding-top:50px;
+  background-color:#f1f1f1;
+  margin-top:-20px;
+}
+
+.materiaal-column {
+  flex-direction: column;
+  flex:10%;
+}
+
+.materiaal-content img {
+  width: 200px;
+  height: 200px;
+}
+.materiaal-content {
+  text-align: center;
+
+}
+
+@media (max-width: 1320px) {
+ .page-project-contactinfo {
+display:none;
+ }
+}
+@media (max-width: 800px) {
+ .page-project-contactinfo {
+display:none;
+ }
+ .buttons-whoami {
+  flex-direction: column;
+  flex: 50%;
+  max-width: 50%;
+ }
+ .materiaal-column {
+  flex: 50%;
+  max-width: 50%;
+ }
+}
+@media (max-width: 500px) {
+ .page-project-contactinfo {
+display:none;
+ }
+ .buttons-whoami {
+  flex-direction: column;
+  flex: 50%;
+  max-width: 50%;
+ }
+ .materiaal-content img {
+  max-width: 150px;
+  max-height: 150px;
+  }
+}
+
+
+/************************************************** CONTACT ******************************************************/
+
+.hero-image_contact {
+  width: 100%;
+  border:none;
+  overflow: hidden;
+}
+#contact_hero {
+  background-image: url("images/contact_page/contact_hero.jpg");
+  height: 370px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  position: relative; 
+}
+#contact_title_hero {
+
+color: white;
+text-align: center;
+font-size: 50px;
+padding:20px;
+position: absolute;
+bottom: 150px;
+background: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+color: #f1f1f1;
+width:100%;
+}
+
+
+/* CONTENT */
+.contact-container-total {
+  padding-left: 20px;
+  padding-right:20px;
+  padding-top:20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container_contact {
+    border-radius: 1px;
+    background-color: white;
+    padding:10px;
+    flex:50%;
+}
+.contact-tekst {
+  color:black;
+}
+
+.contact-tekst {
+  flex:30%;
+  padding-top: 30px;
+}
+
+.adres_contact_page {
+  padding:10px 40px 40px 40px;
+  font-size:20px;
+}
+.adres_contact_page img {
+  width: 49px;
+  height:45px;
+  border-radius:100%; 
+}
+.email_contact_page{
+  padding:10px 40px 40px 40px;
+  font-size:20px;
+}
+.email_contact_page img {
+  width: 49px;
+  height:45px;
+  border-radius:100%; 
+}
+.telefoon_contact_page {
+  padding:10px 40px 40px 40px;
+  font-size:20px;
+}
+.telefoon_contact_page img{
+  width: 49px;
+  height:45px;
+  border-radius:100%;
+}
+
+
+
+
+
+

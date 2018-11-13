@@ -1,0 +1,777 @@
+/* ------------- Hero -------------------------------------------------------------------------------- */
+ 
+.hero-image {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+}
+
+#logoMB {
+  margin-bottom: -25px;
+}
+
+
+#heroImage {
+  background-image: url("../images/achtergrond-home.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.hero-text {
+  padding:0px 40px 30px 60px;
+  display:flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (max-width: 400px) {
+  .hero-text, #heroTitle {
+    font-size: 50px;
+    padding: 0px;
+  }
+}
+
+#heroTitle {
+  font-size: 70px;
+  color: white;  
+}
+
+.background-text-hero {
+display: flex;
+flex-wrap: wrap;
+background-color: rgba(0, 0, 0, 0.2);
+justify-content: left;
+position: absolute;
+align-items: center;
+height:100%;
+width:100%;
+}
+
+/* -------The different projects---------------------------------------------------------------------- */
+
+.banner1 {
+  background-color: black;
+  padding-top: 20px;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  width: 100%;
+  padding: 0 4px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+
+.project {
+  flex: 30%;
+}
+button {
+  border:none;
+}
+
+.project img {
+  height:330px;
+  width: 100%;
+}
+
+/* ---------- Projects */
+#projectenhome_home {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  padding: 0;
+  background: none;
+  margin: 2px 2px 2px 2px;
+}
+
+.overlay_projecten {
+  position: absolute;
+  font-size: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  color:white;
+}
+#projecten_title_home {
+  color:white;
+}
+
+#projectenhome_home span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#projectenhome_home span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#projectenhome_home:hover span{
+  padding-right: 25px;
+}
+
+#projectenhome_home:hover span:after {
+  opacity: 1;
+}
+
+
+/* ------- Sunday Drive Project */
+
+#sundaydrive_home {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  padding: 0;
+  background: none;
+  margin: 2px 2px 2px 2px;
+}
+
+#fotoSundaydrive {
+  display: inline-block;
+}
+
+.overlay4 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 330px;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: url("../images/projecten_foto3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#sundaydrive_home:hover .overlay4 {
+  opacity: 0.9;
+}
+
+/* -------- Kleinkunst Project */
+#kleinkunst_home {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  padding: 0;
+  background: none;
+  margin: 2px 2px 2px 2px;
+}
+
+#fotoKleinkunst {
+  display: inline-block;
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 330px;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: url("../images/projecten_foto3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#kleinkunst_home:hover .overlay2 {
+  opacity: 0.9;
+}
+
+.text-fade2 {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* ---------- Extra project */
+
+#extraProject_home {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  padding: 0;
+  background: none;
+  margin: 2px 2px 2px 2px;
+}
+
+#fotoExtraProject {
+  display: inline-block;
+}
+.overlay_extraProject {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  color:white;
+}
+#exrtraProject_title_home {
+  color:white;
+  font-size: 25px;
+}
+/* ---------- Extra project Transparant */
+
+#extraProjectTransparant_home {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  padding: 0;
+  background: none;
+  margin: 2px 2px 2px 2px;
+}
+
+#fotoExtraProjectTransparant {
+  display: inline-block;
+}
+
+#extraProjectTransparant_home:hover .overlay4 {
+  opacity: 0.9;
+}
+/* ---------- Freelance */
+#freelance_home {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  padding: 0;
+  background: none;
+  margin: 2px 2px 2px 2px;
+}
+
+#fotoFreelance {
+  display: inline-block;
+
+}
+
+.overlay3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 330px;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: url("../images/projecten_foto3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#freelance_home:hover .overlay3 {
+  opacity: 0.9;
+}
+
+
+
+/* ------------- Cockroach Killers Project */
+#cockroachkillers_home {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  padding: 0;
+  background: none;
+  margin: 2px 2px 2px 2px;
+}
+
+#fotoCockroachkillers {
+  display: inline-block;
+}
+
+.overlay6 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 330px;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: url("../images/projecten_foto3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#cockroachkillers_home:hover .overlay6 {
+  opacity: 0.9;
+}
+
+
+@media (max-width: 900px) {
+   .project {
+    max-width: 50%;
+    flex: 50%;
+   }
+   #column_3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 100%;
+    flex-direction: row;
+    flex:25%;
+
+   }
+}
+
+@media (max-width: 600px) {
+   .project {
+    max-width: 100%;
+    flex: 100%;
+   }
+  #column_3 {
+    display: flex;
+    flex-direction: column;
+   }  
+}
+
+/* ------------ Muzieklessen -----------*/
+
+.banner2 {
+  background-color: black;
+}
+
+.muzieklessen-container {
+
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  width: 100%;
+  padding: 0 4px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.muziekles {
+  flex: 30%;
+}
+button {
+  border:none;
+}
+
+.muziekles img {
+  height:330px;
+  width: 100%;
+}
+
+/* ------ De lessen */
+#muzieklessen_home {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  padding: 0;
+  background: none;
+  margin: 2px 2px 2px 2px;
+}
+
+#muzieklessen_home img {
+  height: 667px
+}
+.overlay_muzieklessen {
+  position: absolute;
+  font-size: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  color:white;
+}
+#muzieklessen_title_home{
+  color:white;
+}
+
+#muzieklessen_home span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#muzieklessen_home span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#muzieklessen_home:hover span{
+  padding-right: 25px;
+}
+
+#muzieklessen_home:hover span:after {
+  opacity: 0.9;
+}
+/* ------- Gitaarles */
+#gitaarles_home {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  padding: 0;
+  background: none;
+  margin: 2px 2px 2px 2px;
+}
+
+#fotogitaarles {
+  display: block;
+
+}
+.overlay7 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 330px;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: url("../images/projecten_foto3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#gitaarles_home:hover .overlay7 {
+  opacity: 0.9;
+}
+/* -------- Ukuleleles */
+#ukuleleles_home {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  padding: 0;
+  background: none;
+  margin: 2px 2px 2px 2px;
+}
+
+#fotoukuleleles {
+  display: block;
+}
+.overlay8 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 330px;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: url("../images/projecten_foto3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ukuleleles_home:hover .overlay8 {
+  opacity: 0.9;
+}
+/* -------- Contrabasles */
+#contrabasles_home {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  padding: 0;
+  background: none;
+  margin: 2px 2px 2px 2px;
+}
+
+#fotocontrabasles {
+  display: block;
+}
+.overlay9 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 330px;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: url("../images/projecten_foto3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contrabasles_home:hover .overlay9 {
+  opacity: 0.9;
+}
+/* ---------- Basgitaarles */
+#basgitaarles_home {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  padding: 0;
+  background: none;
+  margin: 2px 2px 2px 2px;
+}
+
+#fotobasgitaarles {
+  display: block;
+}
+
+.overlay10 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 330px;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: url("../images/projecten_foto3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#basgitaarles_home:hover .overlay10 {
+  opacity: 0.9;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 900px) {
+  .muziekles {
+    flex: 50%;
+    max-width: 50%;
+    }
+  #row3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 100%;
+    flex-direction: row;
+    flex:25%;
+
+   }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .muziekles {
+    flex: 100%;
+    max-width: 100%;
+    }
+  #row3 {
+    display: flex;
+    flex-direction: column;
+   }    
+}
+
+
+/* ------- Recording Studio ------- */
+
+.recording-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  width: 100%;
+  padding: 0 4px;
+  padding-top: 60px;
+  padding-bottom: 0px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.recording-row {
+  flex:50%;
+
+}
+button {
+  border:none;
+}
+
+.recording-row img {
+  height:330px;
+  width: 100%;
+}
+/* ---- Tekst gedeelte 
+*/
+
+#Recordingtekst_home {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  padding: 0;
+  background: none;
+  margin: 2px 2px 2px 2px;
+}
+
+#recording_title_home{
+  color:white;
+}
+
+.overlay_recordingstudio {
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  color:white;
+}
+
+#Recordingtekst_home span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#Recordingtekst_home span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#Recordingtekst_home:hover span{
+  padding-right: 25px;
+}
+
+#Recordingtekst_home:hover span:after {
+  opacity: 1;
+}
+/* --- foto gedeelte */
+
+#Recordingfoto_home {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  padding: 0;
+  background: none;
+  margin: 2px 2px 2px 2px;
+
+}
+
+#fotorecordingstudio {
+  display: inline-block;
+}
+
+
+/* PA */
+
+.parental-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  width: 100%;
+  padding: 0 4px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.parental-row {
+  flex:50%;
+
+}
+button {
+  border:none;
+}
+
+.parental-row img {
+  height:330px;
+  width: 100%;
+}
+
+/* ---- Tekst gedeelte 
+*/
+#parental_home {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  padding: 0;
+  background: none;
+  margin: 2px 2px 2px 2px;
+}
+
+.overlay_parental {
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  color:white;
+}
+#parental_title_home{
+  color:white;
+}
+
+
+#parental_home span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#parental_home span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  transition: 0.5s;
+  right: -20px;
+
+}
+
+#parental_home:hover span{
+  padding-right: 25px;
+}
+
+#parental_home:hover span:after {
+  opacity: 1;
+}
+/* --- foto gedeelte */
+#parentalfoto_home {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  padding: 0;
+  background: none;
+  margin: 2px 2px 2px 2px;
+}
+
+#fotoparental {
+  display: inline-block;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 900px) {
+  .parental-row, .recording-row {
+c
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .parental-row, .recording-row {
+    flex: 100%;
+    max-width: 100%;
+    }   
+}
+
